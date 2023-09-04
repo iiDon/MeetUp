@@ -3,11 +3,11 @@ import { type Config } from "tailwindcss";
 export default {
   content: ["./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {
-      fontFamily: {
-        sans: ["Cairo", "sans-serif"],
-      },
-    },
+    // extend: {
+    //   fontFamily: {
+    //     sans: ["Cairo", "sans-serif"],
+    //   },
+    // },
   },
   plugins: [],
 } satisfies Config;
