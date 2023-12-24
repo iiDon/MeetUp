@@ -1,6 +1,5 @@
 import { useRouter } from "next/router";
 import React from "react";
-import { Layout } from "../components/Layout/Layout";
 import BookNow from "../components/Company/BookNow";
 import Details from "../components/Company/Details/Details";
 import { COMPANIES } from "~/Contstant/Companies";
@@ -20,12 +19,10 @@ const Company = () => {
   }
 
   return (
-    <Layout>
-      <div className="mb-8">
-        <BookNow {...company} />
-        <Details {...company} />
-      </div>
-    </Layout>
+    <div className="mb-8">
+      <BookNow {...company} />
+      <Details {...company} />
+    </div>
   );
 };
 

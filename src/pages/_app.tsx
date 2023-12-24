@@ -4,11 +4,14 @@ import { api } from "~/utils/api";
 import "react-toastify/dist/ReactToastify.css";
 
 import "~/styles/globals.css";
+import { Layout } from "~/components/Layout/Layout";
 
 const MyApp: AppType = ({ Component, pageProps }) => {
   return (
     <div className="bg-gray-50">
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Modal from "../Book";
 
 const Companies = () => {
   return (
-    <div className="flex-  mb-16  flex-col" id="companies">
+    <div className=" mb-16  flex-col " id="companies">
       <div className="pt-8 text-center">
         <h5 className="font-bold">Choose the Company</h5>
         <h1 className="py-8 text-2xl font-bold">
@@ -14,7 +14,7 @@ const Companies = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+      <div className="flex flex-wrap items-center justify-center  gap-8">
         {COMPANIES.map((company, index) => {
           return (
             <Company
@@ -56,7 +56,7 @@ const Company = (company: CompanyProps) => {
   const [showModal, setShowModal] = React.useState(false);
 
   return (
-    <>
+    <div className="w-96 ">
       <div className="flex flex-col gap-y-3  border bg-white p-4 shadow-md">
         <Image
           alt="Company"
@@ -113,7 +113,7 @@ const Company = (company: CompanyProps) => {
           companyName={company.name}
         />
       </div>
-    </>
+    </div>
   );
 };
 

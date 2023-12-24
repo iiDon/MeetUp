@@ -9,6 +9,7 @@ const Leftside = () => {
         src="/assets/about/left.jpg"
         width={650}
         height={650}
+        loading="lazy"
         className="rounded-xl"
       />
 
